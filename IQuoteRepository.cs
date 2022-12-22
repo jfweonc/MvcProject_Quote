@@ -1,7 +1,12 @@
-﻿namespace QuoteComment
+﻿using QuoteComment.Models;
+
+namespace QuoteComment
 {
     public interface IQuoteRepository
     {
-        public string quoteString();
+        public Quote quoteString();
+        public void InsertQuote(Quote quoteToInsert);
+        public IEnumerable<Quote> GetAllQuote();
+
     }
 }

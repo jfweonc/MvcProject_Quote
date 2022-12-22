@@ -240,3 +240,11 @@ C:\Users\freeb\Desktop\repos\QuoteComment\obj\Debug\net6.0\refint\QuoteComment.d
 C:\Users\freeb\Desktop\repos\QuoteComment\obj\Debug\net6.0\QuoteComment.pdb
 C:\Users\freeb\Desktop\repos\QuoteComment\obj\Debug\net6.0\QuoteComment.genruntimeconfig.cache
 C:\Users\freeb\Desktop\repos\QuoteComment\obj\Debug\net6.0\ref\QuoteComment.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\Dapper.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\ZstdNet.dll
+C:\Users\freeb\Desktop\repos\QuoteComment\bin\Debug\net6.0\BouncyCastle.Crypto.dll

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuoteComment.Models;
+using QuoteComment; 
 
 namespace QuoteComment.Controllers
 {
@@ -11,8 +13,15 @@ namespace QuoteComment.Controllers
         }
         public IActionResult Index()
         {
-            var quoteObj = repo.quoteString(); 
+            Quote quoteObj = repo.quoteString();
+            repo.InsertQuote(quoteObj);
             return View(quoteObj);
+        }
+        public IActionResult GetAllQuotes()
+        {
+            var quote = repo.GetAllQuote();
+
+            return View(quote);
         }
     }
 }

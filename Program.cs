@@ -1,9 +1,19 @@
-using QuoteComment; 
+using MySql.Data.MySqlClient;
+using Newtonsoft.Json.Linq;
+using QuoteComment;
+using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var connection = builder.Configuration.GetConnectionString("quotes");
+builder.Services.AddScoped<IDbConnection>((s) =>
+{
+    IDbConnection conn = new MySqlConnection(connection);
+    conn.Open();
+    return conn;
+});
 
 builder.Services.AddTransient<IQuoteRepository, QuoteRepository>();
 

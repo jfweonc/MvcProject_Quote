@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Quote>
+    <h1>GetAllQuotes</h1>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Quote</th>
+        <th>Comment</th>
+    </tr>
+
+    @foreach (var quote in Model)
+    {
+        <tr>
+            <td>@quote.Id</td>
+            <td>@quote.quote</td>
+            <td>@quote.comment</td>
+        </tr>
+    }
+</table>
