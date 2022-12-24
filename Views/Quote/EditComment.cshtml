@@ -1,0 +1,15 @@
+﻿@model Quote
+
+<h1>EditComment</h1>
+
+@using (Html.BeginForm("InsertQuoteToDatabase", "Quote", "Post"))
+{
+    <input asp-for="id" type="hidden" value="" />
+    <label asp-for="id" class="control-label">Name</label>
+    <input type="number" step="1" name="id" class="form-control" />
+
+    <label asp-for="comment" class="control-label">Price</label>
+    <input type="text" name="comment" class="form-control" value="" />
+
+    <input type="submit" value="Create Comment" class="btn btn-primary" />
+}

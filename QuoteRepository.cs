@@ -24,12 +24,17 @@ namespace QuoteComment
         }
         public void InsertQuote(Quote quoteToInsert)
         {
-            _conn.Execute("INSERT INTO quotes_table (quote_sql,comment_sql) VALUES (@quote,@comment);",
+            _conn.Execute("INSERT INTO quotes_table (quote,comment) VALUES (@quote,@comment);",
                 new { quote = quoteToInsert.quote, comment = quoteToInsert.comment });
         }
         public IEnumerable<Quote> GetAllQuote()
         {
             return _conn.Query<Quote>("Select * From quotes_table");
+        }
+        public void EditComment(Quote commentToEdit)
+        {
+            _conn.Execute("INSERT INTO products (comment) VALUES (@comment) WHERE id=@id;",
+                new { comment = commentToEdit.comment, id = commentToEdit.id });
         }
     }
 }

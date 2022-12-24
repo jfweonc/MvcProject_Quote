@@ -23,5 +23,10 @@ namespace QuoteComment.Controllers
 
             return View(quote);
         }
+        public IActionResult EditComment()
+        {
+            Quote quoteObj = repo.quoteString();
+            return View(quoteObj); 
+        }
     }
 }
