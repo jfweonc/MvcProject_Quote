@@ -28,5 +28,20 @@ namespace QuoteComment.Controllers
             Quote quoteObj = repo.quoteString();
             return View(quoteObj); 
         }
+
+        [HttpPost]
+        public IActionResult EditComment(Quote quoteToUpdate)
+        {
+            repo.EditComment(quoteToUpdate);
+
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult InsertQuoteToDatabase(Quote quoteToInsert)
+        {
+            repo.EditComment(quoteToInsert);
+
+            return RedirectToAction("Index");
+        }
     }
 }

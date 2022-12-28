@@ -33,7 +33,7 @@ namespace QuoteComment
         }
         public void EditComment(Quote commentToEdit)
         {
-            _conn.Execute("INSERT INTO products (comment) VALUES (@comment) WHERE id=@id;",
+            _conn.Execute("UPDATE quotes_table SET comment=@comment WHERE id=@id;",
                 new { comment = commentToEdit.comment, id = commentToEdit.id });
         }
     }
